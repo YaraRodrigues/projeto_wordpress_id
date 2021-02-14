@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
+	
 <head>
-	<title>Teste Index Digital</title>
-  	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<title>Tema Index Digital</title>
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory') . '/css/main_style.css'; ?>">	
+	<?php wp_head(); ?>
 </head>
 <body>
-<div id="corpo_site">
-	<div id="header">
-	<br/><br/>
-		<h1><?php bloginfo('name'); ?></h1>
-		<h2><?php bloginfo('description'); ?></h2>
-		
-		<ul id="nav">
-			<?php wp_list_cats('sort_column=name'); ?>
-		</ul>
-	</div>
+<div id="pagina" class="pagina">
+	<header class="conteudo cabecalho padding-total">
+		<div class="clearfix">
+			<div class="colunas principal">
+				<div class="conteudo-coluna margem-total">
+					<h1> 
+						<?php bloginfo('name'); ?> 
+						<?php //bloginfo('description'); ?> 
+					</h1>
+				</div>
+			</div>
+			
+			<div class="colunas lateral">
+				<div class="conteudo-coluna margem-total">
+					<?php get_search_form(); ?>
+				</div>
+			</div>
+		</div>
+	</header>
