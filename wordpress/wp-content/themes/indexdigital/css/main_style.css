@@ -1,0 +1,182 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* IE < 8 */
+}
+
+.pagina {
+    max-width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+}
+.conteudo {
+	width: 100%;
+	background: #fff;
+}
+
+.colunas {
+	float: left;
+}
+.lateral {
+	width: 33.33%;
+}
+.principal {
+	width: 66.64%;
+}
+.largura-total {
+	width: 100%;
+}
+.conteudo-coluna {
+	min-height: 1px;
+}
+.margem-total {
+	margin: 15px;
+}
+.padding-total {
+	padding: 15px;
+}
+.padding-esquerda-direita {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+main, aside, article, section , header{
+	display: block;
+}
+body {
+	font-family: sans-serif;
+	background: #ddd;
+	line-height: 1.5;
+	text-align: center;
+}
+p {
+	margin: 1.3em 0;
+}
+h1 {
+	margin: 0.6em 0;
+}
+a { 
+	text-decoration: none;
+	color: #1e88e5;
+}
+.cabecalho, .rodape {
+	background: #000;
+	color: #fff;
+}
+.cabecalho a, .rodape a {
+	color: #fff;
+}
+
+
+
+/**
+ * Comentários
+ */
+
+.comments-area {
+	margin: 30px auto;
+	max-width: 100%;
+	font-size: 12px;
+}
+
+.comment-list {
+	list-style: none;
+	margin: 0 0 30px 0;
+}
+
+.comments-area textarea {
+	width: 100%;
+}
+
+.comment-body  {
+	border: 1px solid #ddd;
+	background: #f9f9f9;
+	padding: 15px;
+	margin: 15px 0;
+}
+
+.comment-reply-title,
+.comments-title {
+	font: 700 22px/1.5 sans-serif;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+
+.comment-author {
+	font-size: 16px;
+	line-height: 1.7142857142;
+}
+
+.comment-list .reply,
+.comment-metadata {
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.comment-reply-link {
+	padding: 5px 10px;
+	color: #fff;
+	display: inline-block;
+	background: #1e88e5;
+}
+
+.comment-author .fn {
+	font-weight: 800;
+}
+
+.comment-author {
+	position: relative;
+}
+
+.comment-author .avatar {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	height: 18px;
+	padding: 2px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+}
+
+.says {
+	display: none;
+}
+
+.comment-author,
+.comment-awaiting-moderation,
+.comment-content,
+.comment-metadata {
+	padding-left: 30px;
+}
+
+.comment-edit-link {
+	margin-left: 10px;
+}
+
+.comment-list .children {
+	list-style: none;
+	margin-left: 15px;
+}
+
+.logged-in-as {
+	font-size: 14px;
+	line-height: 1.7142857142;
+}
