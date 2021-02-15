@@ -21,7 +21,7 @@ Projeto Wordpress de listagem de produtos.
     git clone https://github.com/YaraRodrigues/projeto_wordpress_id.git
 
 
-## Executação
+## Execução
    
   Execute na pasta xampp o xampp-control e inicie os serviços apache e mysql.
 
